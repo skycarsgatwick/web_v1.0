@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sky Cars Gatewick — Professional airport transport and beyond. Gatwick transfers, any UK airport, city transport, flight tracking, and meet & greet." />
+  <title>Sky Cars Gatewick | Luxury Transport UK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <img
+          src="images/sky-cars-logo.png"
+          alt="Sky Cars"
+          class="logo-img"
+          width="132"
+          height="48"
+        />
+        <span class="logo-accent">Sky Cars Gatewick</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#why">Why us</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+447404197447" data-tel="1" class="btn btn-nav btn-nav-compact shimmer-hover" aria-label="Call +44 7404 197447">
+          <img src="icons/phone.svg" alt="" class="icon icon-phone" width="18" height="18" />
+          <span class="nav-btn-label">Call</span>
+        </a>
+        <a
+          href="https://wa.me/447404197447"
+          data-wa="1"
+          class="btn btn-whatsapp btn-nav-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp +44 7404 197447"
+        >
+          <img src="icons/whatsapp.svg" alt="" class="icon icon-whatsapp" width="18" height="18" />
+        </a>
+        <a
+          href="https://wa.me/447466620928"
+          data-wa="2"
+          class="btn btn-whatsapp btn-nav-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp +44 7466 620928"
+        >
+          <img src="icons/whatsapp.svg" alt="" class="icon icon-whatsapp" width="18" height="18" />
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-photo">
+          <img
+            src="images/cars/hero-main.jpg"
+            alt="Luxury chauffeur and Mercedes transfer — inspired by premium Highland service"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-gradient"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-glow hero-glow-3"></div>
+        <div class="hero-lines">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow eyebrow-hero reveal">Professional · Reliable · Safer</p>
+          <h1 class="hero-title-highlight reveal reveal-delay">
+            <img src="icons/plane-landing.svg" alt="" class="icon hero-title-icon" width="28" height="28" />
+            <span>Professional <em>Airport transport</em> and beyond</span>
+          </h1>
+          <p class="flight-tag reveal reveal-delay-2">
+            <img src="icons/radar.svg" alt="" class="icon" width="16" height="16" />
+            Real-time flight tracking - We meet you when you land, even if your flight is late
+          </p>
+          <p class="hero-sub reveal reveal-delay-2">
+            Luxury transportation to <em>Gatwick</em> and across the UK
+          </p>
+          <p class="hero-desc reveal reveal-delay-3">
+            <span class="sky-cars">Sky Cars</span> <span class="logo-accent">Gatewick</span> is a professional, reliable, safer transport service.
+            Our professional team provides friendly service to all customers from any UK airport
+            to the Gatwick airport area, Gatwick to any airport nationwide, and city transport across the region.
+          </p>
+          <div class="hero-pillars reveal reveal-delay-4">
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <img src="icons/badge-check.svg" alt="" class="icon" width="18" height="18" />
+              </span>
+              <div>
+                <strong>Professional</strong>
+                <span>Expert chauffeurs</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <img src="icons/clock.svg" alt="" class="icon" width="18" height="18" />
+              </span>
+              <div>
+                <strong>Reliable</strong>
+                <span>On time, every time</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <img src="icons/shield-check.svg" alt="" class="icon" width="18" height="18" />
+              </span>
+              <div>
+                <strong>Safer</strong>
+                <span>Licensed & insured</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-contact reveal reveal-delay-4">
+            <a href="tel:+447404197447" data-tel="1" class="btn btn-primary shimmer-btn">
+              <img src="icons/phone.svg" alt="" class="icon icon-phone" width="18" height="18" />
+              Call +44 7404 197447
+            </a>
+            <a href="tel:+447466620928" data-tel="2" class="btn btn-primary shimmer-btn">
+              <img src="icons/phone.svg" alt="" class="icon icon-phone" width="18" height="18" />
+              Call +44 7466 620928
+            </a>
+            <a
+              href="https://wa.me/447404197447"
+              data-wa="1"
+              class="btn btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="icons/whatsapp.svg" alt="" class="icon icon-whatsapp" width="18" height="18" />
+              WhatsApp +44 7404 197447
+            </a>
+            <a
+              href="https://wa.me/447466620928"
+              data-wa="2"
+              class="btn btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="icons/whatsapp.svg" alt="" class="icon icon-whatsapp" width="18" height="18" />
+              WhatsApp +44 7466 620928
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Discover</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="marquee-section" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span class="marquee-highlight">Professional Airport Transport & Beyond</span><span>Gatwick Airport</span><span>Heathrow</span><span>Stansted</span><span>Flight Tracking</span><span>Meet & Greet</span><span>City Transport</span><span>Any UK Airport</span>
+          <span class="marquee-highlight">Professional Airport Transport & Beyond</span><span>Gatwick Airport</span><span>Heathrow</span><span>Stansted</span><span>Flight Tracking</span><span>Meet & Greet</span><span>City Transport</span><span>Any UK Airport</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Our services</p>
+          <h2>Airport, city & <em>premium</em> care</h2>
+          <p>
+            Professional transport across the UK with flight tracking and meet & greet —
+            friendly service from our dedicated team, every step of the way.
+          </p>
+        </header>
+        <div class="services-highlight">
+          <article class="service-card lux-card service-flight-highlight reveal">
+            <span class="service-badge pulse-badge">Always included</span>
+            <div class="service-icon float-icon" aria-hidden="true">
+              <img src="icons/radar.svg" alt="" class="icon" width="32" height="32" />
+            </div>
+            <div class="service-body">
+              <h3>Flight tracking</h3>
+              <p>
+                We track your flight in real time and adjust your pickup automatically. Your chauffeur
+                will be there as soon as you land — even if your flight is delayed or early. No extra
+                charge, no stress — just step off the plane and go.
+              </p>
+            </div>
+            <span class="card-glow"></span>
+          </article>
+          <article class="service-card lux-card service-transport-highlight reveal reveal-delay">
+            <span class="service-badge pulse-badge">Our promise</span>
+            <div class="service-icon float-icon" aria-hidden="true">
+              <img src="icons/plane-landing.svg" alt="" class="icon" width="32" height="32" />
+            </div>
+            <div class="service-body">
+              <h3>Professional Airport transport and beyond</h3>
+              <p>
+                From any UK airport to Gatwick, Gatwick to airports nationwide, and executive city travel —
+                one professional team, a premium black fleet, and friendly service on every journey.
+              </p>
+            </div>
+            <span class="card-glow"></span>
+          </article>
+        </div>
+        <div class="services-cards">
+          <article class="service-card lux-card reveal reveal-delay-2">
+            <div class="service-icon float-icon" aria-hidden="true">
+              <img src="icons/plane.svg" alt="" class="icon" width="28" height="28" />
+            </div>
+            <h3>Any airport → Gatwick</h3>
+            <p>
+              Transport from any UK airport to the Gatwick airport area. Heathrow, Stansted,
+              Luton, Manchester, Birmingham, and nationwide — we connect you with comfort and care.
+            </p>
+            <span class="card-glow"></span>
+          </article>
+          <article class="service-card lux-card reveal reveal-delay-3">
+            <div class="service-icon float-icon" aria-hidden="true">
+              <img src="icons/plane-landing.svg" alt="" class="icon" width="28" height="28" />
+            </div>
+            <h3>Gatwick → Any airport</h3>
+            <p>
+              Transport from the Gatwick airport area to any airport across the United Kingdom.
+              Professional, reliable, and on schedule for every departure.
+            </p>
+            <span class="card-glow"></span>
+          </article>
+          <article class="service-card lux-card reveal reveal-delay-4">
+            <div class="service-icon float-icon" aria-hidden="true">
+              <img src="icons/building-2.svg" alt="" class="icon" width="28" height="28" />
+            </div>
+            <h3>City transport</h3>
+            <p>
+              City transport for business, leisure, and events. Point-to-point executive travel
+              with our friendly team at your service throughout the journey.
+            </p>
+            <span class="card-glow"></span>
+          </article>
+          <article class="service-card lux-card reveal reveal-delay-5">
+            <div class="service-icon float-icon" aria-hidden="true">
+              <img src="icons/handshake.svg" alt="" class="icon" width="28" height="28" />
+            </div>
+            <h3>Meet & greet service</h3>
+            <p>
+              Your chauffeur meets you in the arrivals hall with a name board, assists with luggage,
+              and guides you to your vehicle - a seamless start to your journey.
+            </p>
+            <span class="card-glow"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase reveal" id="fleet" aria-label="Black Mercedes taxi fleet">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Our fleet</p>
+          <h2>Premium black <em>vehicles</em></h2>
+          <p>E-Class saloon, estate, and V-Class MPV — maintained to the highest standard.</p>
+        </header>
+      </div>
+      <div class="showcase-track">
+        <figure class="showcase-item">
+          <img src="images/cars/2580503875.jpg" alt="Black Mercedes-Benz E-Class taxi saloon" loading="lazy" />
+          <figcaption>E-Class Saloon</figcaption>
+        </figure>
+        <figure class="showcase-item showcase-featured showcase-estate">
+          <img src="images/cars/e-class-estate.jpg" alt="2012 Mercedes-Benz E-Class Estate Black Bison by Wald" loading="lazy" />
+          <figcaption>E-Class Estate</figcaption>
+        </figure>
+        <figure class="showcase-item">
+          <img src="images/cars/v-class-minivan.jpg" alt="Mercedes-Benz V-Class minivan" loading="lazy" />
+          <figcaption>V-Class MPV</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Why <span class="sky-cars">Sky Cars</span> <span class="logo-accent">Gatewick</span></p>
+          <h2>Built on <em>trust</em>, excellence & <em>24/7 service</em></h2>
+          <p>Available around the clock — book airport and city transfers any time, day or night.</p>
+        </header>
+        <div class="why-featured">
+          <div class="why-card why-transport-highlight reveal">
+            <div class="why-num">01</div>
+            <h3>Airport transport & beyond</h3>
+            <p>
+              <strong>Professional airport transport</strong> to and from Gatwick, any UK airport, and city
+              destinations — reliable, safer travel wherever you need to go.
+            </p>
+          </div>
+          <div class="why-card why-flight-highlight reveal reveal-delay">
+            <div class="why-num">02</div>
+            <h3>Flight tracking</h3>
+            <p>
+              We monitor your flight and adjust pickup times automatically — your driver
+              will be waiting when you land, even if the flight is late.
+            </p>
+          </div>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-num">03</div>
+            <h3>Professional team</h3>
+            <p>
+              Our chauffeurs are trained, courteous, and committed to delivering
+              a premium experience on every single journey.
+            </p>
+          </div>
+          <div class="why-card reveal reveal-delay-3">
+            <div class="why-num">04</div>
+            <h3>Friendly service</h3>
+            <p>
+              We welcome all customers with warmth and attention your comfort
+              and satisfaction are at the heart of everything we do.
+            </p>
+          </div>
+          <div class="why-card reveal reveal-delay-4">
+            <div class="why-num">05</div>
+            <h3>Meet & greet service</h3>
+            <p>
+              Personal meet & greet in the arrivals hall, luggage assistance, and a direct
+              escort to your vehicle — the premium welcome you deserve.
+            </p>
+          </div>
+          <div class="why-card reveal reveal-delay-5">
+            <div class="why-num">06</div>
+            <h3>24/7 service</h3>
+            <p>
+              Early flight, late arrival, or last-minute plans our team is on call 24 hours a day,
+              7 days a week for Gatwick, UK airports, and city travel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container how-grid">
+        <header class="section-header reveal">
+          <p class="eyebrow">Simple process</p>
+          <h2>Your journey, <em>made simple</em></h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Book your ride</h3>
+              <p>Share your route — airport to Gatwick, Gatwick to any UK airport, or city transport.</p>
+            </div>
+          </li>
+          <li class="step reveal reveal-delay">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Meet & greet at the airport</h3>
+              <p>Your chauffeur meets you in arrivals with a name board, helps with luggage, and escorts you to your vehicle.</p>
+            </div>
+          </li>
+          <li class="step reveal reveal-delay-2">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Arrive in comfort</h3>
+              <p>Enjoy a safer, reliable ride with friendly service from start to finish.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-banner reveal-scale">
+      <div class="cta-shine" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <div>
+          <h2>Ready to travel with <span class="sky-cars">Sky Cars</span> <span class="logo-accent">Gatewick</span>?</h2>
+          <p class="cta-tagline">Professional <strong>Airport transport</strong> and beyond</p>
+          <p>Book your airport or city journey today — reliable, safer, friendly service.</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="tel:+447404197447" data-tel="1" class="btn btn-primary shimmer-btn">
+            <img src="icons/phone.svg" alt="" class="icon icon-phone" width="18" height="18" />
+            Call +44 7404 197447
+          </a>
+          <a href="tel:+447466620928" data-tel="2" class="btn btn-primary shimmer-btn">
+            <img src="icons/phone.svg" alt="" class="icon icon-phone" width="18" height="18" />
+            Call +44 7466 620928
+          </a>
+          <a
+            href="https://wa.me/447404197447"
+            data-wa="1"
+            class="btn btn-whatsapp shimmer-hover"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="icons/whatsapp.svg" alt="" class="icon icon-whatsapp" width="18" height="18" />
+            WhatsApp +44 7404 197447
+          </a>
+          <a
+            href="https://wa.me/447466620928"
+            data-wa="2"
+            class="btn btn-whatsapp shimmer-hover"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="icons/whatsapp.svg" alt="" class="icon icon-whatsapp" width="18" height="18" />
+            WhatsApp +44 7466 620928
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img
+            src="images/sky-cars-logo.png"
+            alt="Sky Cars"
+            class="logo-img"
+            width="120"
+            height="44"
+          />
+          <span class="logo-accent">Sky Cars Gatewick</span>
+        </a>
+        <p>
+          Professional, reliable, safer transport service across Gatwick, UK airports,
+          and city routes. Friendly service from our dedicated team.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+447404197447" data-tel="1" data-tel-display>+44 7404 197447</a></li>
+          <li><a href="tel:+447466620928" data-tel="2" data-tel-display>+44 7466 620928</a></li>
+          <li>
+            <a href="https://wa.me/447404197447" data-wa="1" data-wa-display target="_blank" rel="noopener noreferrer">WhatsApp +44 7404 197447</a>
+          </li>
+          <li>
+            <a href="https://wa.me/447466620928" data-wa="2" data-wa-display target="_blank" rel="noopener noreferrer">WhatsApp +44 7466 620928</a>
+          </li>
+          <li><a href="mailto:skycarsvip@yahoo.com" data-mail="1" data-mail-display>skycarsvip@yahoo.com</a></li>
+          <li><a href="mailto:skycarsgatwick11@gmail.com" data-mail="2" data-mail-display>skycarsgatwick11@gmail.com</a></li>
+          <li>
+            37 Patching Close<br />
+            Crawley<br />
+            RH11 0ES<br />
+            UK
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li>Any airport → Gatwick</li>
+          <li>Gatwick → Any airport</li>
+          <li>City transport</li>
+          <li>Flight tracking</li>
+          <li>Meet & greet service</li>
+          <li>24/7 availability</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Areas</h4>
+        <ul>
+          <li>Gatwick & Crawley</li>
+          <li>London & South East</li>
+          <li>All UK airports</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 <span class="sky-cars">Sky Cars</span> <span class="logo-accent">Gatewick</span>. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="contact-float" aria-label="Quick contact">
+    <div class="contact-float-picker-group">
+      <button
+        type="button"
+        class="contact-float-btn contact-float-phone contact-float-picker-toggle"
+        id="floatPhoneToggle"
+        aria-expanded="false"
+        aria-controls="floatPhoneMenu"
+        aria-label="Call — choose a number"
+      >
+        <img src="icons/phone.svg" alt="" class="icon" width="22" height="22" />
+      </button>
+      <div class="contact-float-picker-menu contact-float-phone-menu" id="floatPhoneMenu" role="menu" hidden>
+        <a role="menuitem" href="tel:+447404197447" data-tel="1" data-tel-menu>+44 7404 197447</a>
+        <a role="menuitem" href="tel:+447466620928" data-tel="2" data-tel-menu>+44 7466 620928</a>
+      </div>
+    </div>
+    <div class="contact-float-picker-group">
+      <button
+        type="button"
+        class="contact-float-btn contact-float-wa contact-float-picker-toggle"
+        id="floatWaToggle"
+        aria-expanded="false"
+        aria-controls="floatWaMenu"
+        aria-label="WhatsApp — choose a number"
+      >
+        <img src="icons/whatsapp.svg" alt="" class="icon icon-whatsapp" width="24" height="24" />
+      </button>
+      <div class="contact-float-picker-menu contact-float-wa-menu" id="floatWaMenu" role="menu" hidden>
+        <a role="menuitem" href="https://wa.me/447404197447" data-wa="1" data-wa-menu target="_blank" rel="noopener noreferrer">+44 7404 197447</a>
+        <a role="menuitem" href="https://wa.me/447466620928" data-wa="2" data-wa-menu target="_blank" rel="noopener noreferrer">+44 7466 620928</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
