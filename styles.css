@@ -1,31 +1,31 @@
 /* Sky Cars Gatewick — Luxury transport */
 
 :root {
-  --bg-deep: #0c1628;
-  --bg-mid: #122240;
-  --bg-elevated: #1a2f4f;
-  --bg-card: rgba(18, 32, 58, 0.82);
-  --bg-overlay: rgba(10, 22, 42, 0.92);
-  --bg-overlay-mid: rgba(10, 22, 42, 0.75);
-  --bg-overlay-soft: rgba(10, 22, 42, 0.55);
-  --border: rgba(140, 170, 220, 0.12);
-  --border-hover: rgba(212, 175, 95, 0.4);
+  --bg-deep: #0e1a32;
+  --bg-mid: #152848;
+  --bg-elevated: #1f3a65;
+  --bg-card: rgba(22, 42, 78, 0.88);
+  --bg-overlay: rgba(8, 16, 34, 0.93);
+  --bg-overlay-mid: rgba(10, 22, 44, 0.78);
+  --bg-overlay-soft: rgba(14, 28, 52, 0.58);
+  --border: rgba(100, 155, 230, 0.16);
+  --border-hover: rgba(212, 175, 95, 0.45);
   --text: #f4f2ef;
-  --text-muted: #9aa8bc;
+  --text-muted: #a3b8d4;
   --gold: #d4af5f;
   --gold-light: #e8c97a;
-  --gold-dim: rgba(212, 175, 95, 0.18);
-  --sky-blue: #5a9fd4;
-  --sky-blue-light: #8ec8f0;
-  --sky-blue-dim: rgba(110, 184, 232, 0.25);
+  --gold-dim: rgba(212, 175, 95, 0.2);
+  --sky-blue: #4a9fe8;
+  --sky-blue-light: #7ec4f5;
+  --sky-blue-dim: rgba(90, 170, 240, 0.3);
   --accent: #c9a227;
   --text-on-gold: #0c1628;
   --radius: 14px;
   --radius-lg: 22px;
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-display: "Playfair Display", Georgia, serif;
-  --shadow: 0 24px 80px rgba(5, 12, 28, 0.55);
-  --shadow-navy: 0 16px 48px rgba(5, 12, 28, 0.4);
+  --shadow: 0 24px 80px rgba(4, 10, 24, 0.58);
+  --shadow-navy: 0 16px 48px rgba(4, 10, 24, 0.42);
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -43,7 +43,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: linear-gradient(165deg, #0e1d35 0%, var(--bg-deep) 45%, #0a1428 100%);
+  background: linear-gradient(165deg, #1a3560 0%, var(--bg-deep) 42%, #080f1e 100%);
   background-attachment: fixed;
   color: var(--text);
   line-height: 1.6;
@@ -91,14 +91,64 @@ ul {
 }
 
 .eyebrow-hero {
-  display: inline-block;
+  display: block;
   width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
   padding: 0.45rem 1rem;
-  color: var(--gold-light);
+  color: #ffe566;
   background: rgba(212, 175, 95, 0.12);
   border: 1px solid rgba(212, 175, 95, 0.45);
   border-radius: 999px;
   box-shadow: 0 0 22px rgba(212, 175, 95, 0.15);
+}
+
+.hero-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.85rem clamp(1.1rem, 3vw, 1.75rem);
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(212, 175, 95, 0.1) 0%, transparent 42%),
+    linear-gradient(315deg, rgba(90, 170, 240, 0.12) 0%, transparent 38%),
+    linear-gradient(120deg, #254875 0%, #1f3a65 45%, #152848 100%);
+  border: 1px solid rgba(212, 175, 95, 0.4);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 0 28px rgba(212, 175, 95, 0.12),
+    0 12px 36px rgba(5, 12, 28, 0.45);
+}
+
+.hero-welcome-text {
+  line-height: 1.2;
+}
+
+.hero-welcome-pattern {
+  flex-shrink: 0;
+  width: clamp(2.25rem, 6vw, 3.25rem);
+  height: 1.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 24' fill='none'%3E%3Cline x1='0' y1='12' x2='16' y2='12' stroke='%23d4af5f' stroke-width='1' stroke-opacity='0.55'/%3E%3Cline x1='0' y1='12' x2='10' y2='12' stroke='%23e8c97a' stroke-width='1.5'/%3E%3Cpath d='M20 12 L24 7 L28 12 L24 17 Z' stroke='%23e8c97a' stroke-width='1' fill='rgba(212,175,95,0.15)'/%3E%3Ccircle cx='24' cy='12' r='1.5' fill='%23d4af5f'/%3E%3Cline x1='32' y1='12' x2='52' y2='12' stroke='%23d4af5f' stroke-width='1' stroke-opacity='0.55'/%3E%3Cline x1='42' y1='12' x2='52' y2='12' stroke='%23e8c97a' stroke-width='1.5'/%3E%3Ccircle cx='8' cy='12' r='1' fill='%23d4af5f' fill-opacity='0.7'/%3E%3Ccircle cx='44' cy='12' r='1' fill='%23d4af5f' fill-opacity='0.7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.92;
+  filter: drop-shadow(0 0 8px rgba(212, 175, 95, 0.25));
+}
+
+.hero-welcome-pattern:last-child {
+  transform: scaleX(-1);
 }
 
 h1, h2, h3 {
@@ -353,7 +403,7 @@ button.contact-float-btn {
 
 .header.scrolled {
   padding: 0.75rem 0;
-  background: rgba(26, 47, 79, 0.92);
+  background: rgba(31, 58, 101, 0.94);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
@@ -409,6 +459,20 @@ button.contact-float-btn {
   color: var(--gold-light);
   font-style: italic;
   white-space: nowrap;
+}
+
+.header .logo .logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.15;
+}
+
+.header .logo .logo-text .logo-accent {
+  position: relative;
+  top: 0;
+  margin-left: 60%;
+  margin-top: 0.05em;
 }
 
 /* Cursor glow (desktop) */
@@ -560,7 +624,7 @@ body:hover .cursor-glow {
   min-height: 100vh;
   display: flex;
   align-items: flex-start;
-  padding: 8rem 0 7rem;
+  padding: 5.5rem 0 7rem;
   overflow: hidden;
 }
 
@@ -568,25 +632,7 @@ body:hover .cursor-glow {
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-.hero-photo {
-  position: absolute;
-  inset: 0;
-}
-
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  transform: scale(1.05);
-  animation: heroKenBurns 20s ease-in-out infinite alternate;
-}
-
-@keyframes heroKenBurns {
-  0% { transform: scale(1.05) translateX(0); }
-  100% { transform: scale(1.12) translateX(-1.5%); }
+  background: linear-gradient(165deg, #1a3560 0%, var(--bg-deep) 42%, #080f1e 100%);
 }
 
 .hero-overlay {
@@ -712,7 +758,7 @@ body:hover .cursor-glow {
   width: 100%;
   max-width: 720px;
   padding-inline: clamp(1.25rem, 4vw, 2.5rem);
-  margin-top: clamp(0.5rem, 4vh, 2.5rem);
+  margin-top: 0;
   padding-bottom: 5rem;
 }
 
@@ -721,12 +767,11 @@ body:hover .cursor-glow {
 }
 
 .hero-title-highlight {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  width: fit-content;
-  max-width: 100%;
+  gap: 0.5rem 0.75rem;
+  width: 100%;
   margin-bottom: 1rem;
   padding: 0.85rem 1.35rem;
   font-family: var(--font-display);
@@ -749,8 +794,30 @@ body:hover .cursor-glow {
 }
 
 .hero-title-icon {
+  grid-column: 1;
+  grid-row: 1;
   flex-shrink: 0;
   opacity: 0.95;
+}
+
+.hero-title-lead {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero-title-text {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  min-width: 0;
+}
+
+.hero-title-main {
+  font-size: clamp(0.88rem, 1.85vw, 1.12rem);
 }
 
 @keyframes heroTitlePulse {
@@ -767,7 +834,7 @@ body:hover .cursor-glow {
 .hero-sub {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2vw, 1.45rem);
-  color: var(--text-muted);
+  color: #fff;
   margin-bottom: 1rem;
   max-width: 600px;
 }
@@ -813,7 +880,7 @@ body:hover .cursor-glow {
 }
 
 .hero-desc {
-  color: var(--text-muted);
+  color: #fff;
   font-size: clamp(0.95rem, 1.8vw, 1.1rem);
   max-width: 540px;
   margin-bottom: 2rem;
@@ -831,7 +898,7 @@ body:hover .cursor-glow {
   align-items: flex-start;
   gap: 0.6rem;
   padding: 0.85rem 1rem;
-  background: rgba(212, 175, 95, 0.06);
+  background: rgba(212, 175, 95, 0.15);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition: var(--transition);
@@ -864,9 +931,9 @@ body:hover .cursor-glow {
   font-weight: 600;
 }
 
-.pillar span {
+.pillar div span {
   font-size: 0.75rem;
-  color: var(--text-muted);
+  color: #fff;
 }
 
 /* Booking card */
@@ -965,7 +1032,7 @@ body:hover .cursor-glow {
 .form-group select {
   width: 100%;
   padding: 0.85rem 1rem;
-  background: rgba(10, 22, 42, 0.5);
+  background: rgba(14, 28, 52, 0.55);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   color: var(--text);
@@ -1042,7 +1109,7 @@ body:hover .cursor-glow {
 .marquee-track span {
   font-family: var(--font-display);
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   letter-spacing: 0.06em;
 }
@@ -1274,7 +1341,7 @@ body:hover .cursor-glow {
 }
 
 .marquee-highlight {
-  color: var(--gold-light);
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1345,7 +1412,7 @@ body:hover .cursor-glow {
 
 /* Why us */
 .why {
-  background: linear-gradient(180deg, transparent, rgba(20, 36, 62, 0.6), transparent);
+  background: linear-gradient(180deg, transparent, rgba(26, 52, 96, 0.55), transparent);
 }
 
 .why-featured {
@@ -1508,7 +1575,7 @@ body:hover .cursor-glow {
 
 /* Fleet */
 .fleet {
-  background: linear-gradient(180deg, transparent 0%, rgba(20, 36, 62, 0.5) 50%, transparent 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(26, 52, 96, 0.48) 50%, transparent 100%);
 }
 
 .fleet-list {
@@ -1878,6 +1945,12 @@ body:hover .cursor-glow {
   font-size: 0.9rem;
   color: var(--text-muted);
   margin-bottom: 0.5rem;
+}
+
+.footer-col a[data-tel],
+.footer-col .footer-phone-number {
+  color: #fff;
+  font-weight: 400;
 }
 
 .footer-col a:hover {
